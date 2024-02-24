@@ -51,6 +51,9 @@ header > section:first-child{
 header > section:first-child > img{
   width: 10%;
   height: 100%;
+  &:hover{
+    animation: aumentar 1s;
+  }
 }
 
 nav{
@@ -100,6 +103,9 @@ header > section:last-child > p{
   font-weight: bold;
   text-align: center;
   font-size: 1.8rem;
+  &:hover{
+    animation: aumentar 1s;
+  }
 }
 
 main {
@@ -223,4 +229,16 @@ footer > p{
     height: 100%;
   }
 
+}
+
+@keyframes aumentar{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
