@@ -1,234 +1,108 @@
 *{
-  margin: 0;
+  margin:0;
   padding: 0;
   box-sizing: border-box;
 }
-
-header,section,article,aside{
-  padding: 1rem;
-}
-
-header,main,footer{
-  width: 100%;
-}
-
 .container{
   max-width: 1200px;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1rem;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  margin-inline: auto;
+  /* display: grid;
+  grid-template-rows: 35% 50% 15%;
+  gap: 1rem; */
 }
-
 header{
+  grid-row: 1/2;
+  width: 100%;
+  display: grid;
+  height: 30vh;
+  margin-bottom: 1rem;
+  grid-template-rows: 50% 50%;
+  gap: 1rem;
   background-image: url(../images/header.jpg);
   background-position: 50% 50%;
-  background-size: 150%;
-  height: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1rem;
   position: relative;
 }
-
-header > section{
-  width: 100%;
-  height: 50%;
-}
 header > section:first-child{
-  width: 100%;
-  display: flex;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  padding-inline:1rem
+}
+header > .logo{
+  grid-column: 1/2;
+}
+.logo img:hover{
+ 
+    animation: aumentar 1.5s;
+  
+}
+img{
+  width: 100%;
+  height: auto;
+}
+header nav{
+  grid-column: 2/3;
 }
 
-
-
-header > section:first-child > img{
-  width: 10%;
-  height: 100%;
-  &:hover{
-    animation: aumentar 1s;
-  }
+header ul{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 10px;
+  padding: 0;
 }
-
-nav{
-  width: 70%;
+header ul li{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
 }
-
-ul{
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-li{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 5px;
-}
-
-li > img{
-  width: 20px;
-}
-
-li > a{
+ header ul li a {
+  font-size: 1.5em;
   text-decoration: none;
   color: black;
   &:hover{
-    color: rgba(255, 0, 0, 0.5);
+    color: red;
   }
+ }
+header ul li img{
+  width: 25px;
+  justify-self: center;
+}
+.social{
+  grid-column: 3/4;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;  
 }
 
 
 header > section:last-child{
-  width: 90%;
-  background-color: #958f8f;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -1rem;
+  grid-row: 2/3;
+  width: 80%;
+  height:75%;
+  background-color: grey;
+  display: grid;
+  place-items: center;
   opacity: 0.3;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  
 }
 
-header > section:last-child > p{
-  width: 100%;
-  height: 100%;
-  color: rgb(255, 89, 0);
-  font-weight: bold;
+h1{
+  font-size: 200%;
   text-align: center;
-  font-size: 1.8rem;
+  color: red;
   &:hover{
-    animation: aumentar 1s;
+    animation: aumentar 1.5s;
   }
-}
-
-main {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  
-}
-
-
-
-main > section{
-  width: 75%;
-  height: 100%;
-  background-color: #D8D7D7;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-main > section > article{
-  width: calc(50% - 1rem);
-  background-color: #F5F1F1;
-}
-
-
-article img {
-  width: 100%;
-  height: auto;
-}
-
-article > h2{
-  background-color: rosybrown;
-  padding: .5rem .25rem 0;
-  text-transform: uppercase;
-}
-article > p{
-  column-count: 2;
-  margin: 0;
-}
-figcaption{
-  margin-top: -1.5rem;
-  margin-left: 5px;
-  color: yellow;
-}
-figure{
-  margin-bottom: .5rem;
-}
-main > section > p{
-  width: 100%;
-  text-align: center;
-}
-
-aside{
-  width: 25%;
-  background-color: #D8D7D7;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  gap: 1rem;
-  min-height: 100%;
-}
-
-aside > p{
-  width: 100%;
-}
-footer{
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  background-color: #D8D7D7;
-  
-
-
-}
-footer > p{
-  background-color: #F5F1F1;
-  width: 100%;
-  height: 100%;
-  margin: 0 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-@media(width <= 900px) {
-  main{
-    flex-direction: column;
-  }
-  main > aside,main > section{
-    width: 100%;
-  }
-}
-
-@media(width <= 768px){
-  nav{
-    width: 90%;
-  }
-  p{
-    font-size: 1.2rem;
-  }
-  .social{
-    width: 5%;
-  }
-
-  header > img{
-    width: 5%;
-  }
-  main>section{
-    flex-direction: column;
-  }
-  main > section > article{
-    width: 100%;
-  }
-
-  aside{
-    height: 100%;
-  }
-
 }
 
 @keyframes aumentar{
@@ -240,5 +114,114 @@ footer > p{
   }
   100%{
     transform: scale(1);
+  }
+}
+
+/* Fin header */
+/* inicio del main */
+main{
+  width: 100%;
+  /* grid-row: 2/3; */
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+main > section, aside{
+  background-color: #D8D7D7;
+  
+}
+
+aside{
+  width: calc(100% - 1rem);
+  padding: 1rem;
+  text-align: center;
+}
+aside p:first-child{
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+main > section{
+ 
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  gap:1rem;
+  padding: 1rem;
+}
+
+article{
+  background-color: white;
+  padding: 1rem;
+  width: calc(100% - 1rem);
+}
+figure{
+  position: relative;
+  margin-bottom: .5rem;
+}
+figcaption{
+  color: yellow;
+ position: absolute;
+ bottom: 10px;
+ left: 10px;
+}
+
+h2{
+  background-color: #F08080;
+  padding-top: .5rem;
+  padding-left: .25rem;
+  color: white;
+}
+article > p{
+  column-count: 2;
+}
+
+section > p{
+ grid-column: 1/3;
+  padding-inline: 1rem;
+  text-align: center;
+} 
+footer{
+  height: 3rem;
+  background-color: grey;
+  padding-inline: .5rem;
+}
+
+footer p{
+  background-color: white;
+  height: 100%;
+  text-align: center;
+}
+
+@media(max-width: 900px) {
+  main{
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+}
+
+@media(max-width:768px) {
+ 
+  header ul li a{
+    font-size: .5rem;
+  }
+  header ul li img{
+    width: 10px;
+  }
+  h1{
+    font-size: .9rem;
+  }
+
+  main > section{
+    grid-template-columns: 1fr ;
+    column-gap: 0;
+  }
+  section > article{
+    grid-column: 1/2;
+    width: 100%;
+  }
+  
+  aside{
+    margin: 0;
   }
 }
