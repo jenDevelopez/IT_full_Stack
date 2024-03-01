@@ -9,9 +9,10 @@
   <?php
     $X = array(10, 20, 30, 40, 50,60);
     echo "Longitud del array: " . count($X) . "<br>"; 
-    $Y  = array_filter($X, fn($element) => $element !== $X[count($X)-1]);
-    echo "Longitud del array: " . count($Y) . "<br>"; 
-   
+    unset($X[0]);
+    $X = array_values($X);
+    echo "Longitud del array despues de eliminar un elemento: " . count($X) . "<br>";
+    
     ?>
 </body>
 </html>
