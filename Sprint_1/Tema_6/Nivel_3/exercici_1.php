@@ -6,12 +6,30 @@ enum Tema {
   case SQL;
   case Laravel;
 
+  public function getName(): string {
+    return match ($this) {
+      $this::PHP => "PHP",
+      $this::CSS => 'CSS',
+      $this::HTML => 'HTML',
+      $this::SQL => 'SQL',
+      $this::Laravel => 'Laravel',
+    };
+  }
+
 }
 
 enum Tipo {
   case Archivo;
   case ArticuloWeb;
   case Video;
+  public function getName(): string {
+    return match ($this){
+      $this::Archivo => 'Archivo',
+      $this::ArticuloWeb => 'Artículo web',
+      $this::Video => 'Video',
+    };
+  }
+ 
 }
 class Recurso {
 public $nombre;
@@ -19,7 +37,7 @@ public Tema $tema;
 public Tipo $tipo;
 public $url;
 
-function __construct($nombre,$tema,$tipo,$url){
+function __construct($nombre,Tema $tema, Tipo $tipo,$url){
   $this->nombre=$nombre;
   $this->tema=$tema;
   $this->tipo=$tipo;
@@ -43,8 +61,12 @@ function get_url(){
   return $this->url;
 }
 
+
 function get_info(){
-  $datos = array($this->nombre,$this->tema->name,$this->tipo->name,$this->url);
+  $datos = array($this->nombre,
+  $this->tema->getName(),
+  $this->tipo->getName(),
+  $this->url);
   return $datos;
 }
 };
