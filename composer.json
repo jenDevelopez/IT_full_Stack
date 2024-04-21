@@ -1,0 +1,17 @@
+{
+    "autoload":{
+        "autoload": {
+            "psr-4": {
+                "Sprint1\\Tema_7\\Nivel_1\\Exercici_1\\": "src/Nivel_1/"
+            }
+        }
+    },
+    "autoload-dev":{
+        "psr-4": {
+            "Sprint1\\Tests\\" : "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11"
+    }
+}
