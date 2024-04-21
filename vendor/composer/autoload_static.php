@@ -34,7 +34,18 @@ class ComposerStaticInitb4032860af6a4695370fd8567d73bfe7
     );
 
     public static $classMap = array (
+        'Animal' => __DIR__ . '/../..' . '/src/Sprint1/Tema_5/Nivel_1/exercici_1.php',
+        'App\\NumberChecker' => __DIR__ . '/../..' . '/src/Sprint1/Tema_7/NumberChecker.php',
+        'Bird' => __DIR__ . '/../..' . '/src/Sprint1/Tema_5/Nivel_1/exercici_1.php',
+        'Car' => __DIR__ . '/../..' . '/src/Sprint1/Tema_6/Nivel_3/exercici_2.php',
+        'Cat' => __DIR__ . '/../..' . '/src/Sprint1/Tema_5/Nivel_1/exercici_1.php',
+        'Cinema' => __DIR__ . '/../..' . '/src/Sprint1/Tema_4/Nivel_3/exercici_1.php',
+        'Circle' => __DIR__ . '/../..' . '/src/Sprint1/Tema_5/Nivel_2/exercici_1.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Dog' => __DIR__ . '/../..' . '/src/Sprint1/Tema_5/Nivel_1/exercici_1.php',
+        'Employee' => __DIR__ . '/../..' . '/src/Sprint1/Tema_4/Nivel _1/exercici_1.php',
+        'Hijo' => __DIR__ . '/../..' . '/src/Sprint1/Tema_6/Nivel_2/exercici_2.php',
+        'ObtenerDatos' => __DIR__ . '/../..' . '/src/Sprint1/Tema_6/Nivel_2/exercici_1.php',
         'PHPUnit\\Event\\Application\\Finished' => __DIR__ . '/..' . '/phpunit/phpunit/src/Event/Events/Application/Finished.php',
         'PHPUnit\\Event\\Application\\FinishedSubscriber' => __DIR__ . '/..' . '/phpunit/phpunit/src/Event/Events/Application/FinishedSubscriber.php',
         'PHPUnit\\Event\\Application\\Started' => __DIR__ . '/..' . '/phpunit/phpunit/src/Event/Events/Application/Started.php',
@@ -928,6 +939,8 @@ class ComposerStaticInitb4032860af6a4695370fd8567d73bfe7
         'PHPUnit\\Util\\Xml' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Xml/Xml.php',
         'PHPUnit\\Util\\Xml\\Loader' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Xml/Loader.php',
         'PHPUnit\\Util\\Xml\\XmlException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Exception/XmlException.php',
+        'Padre' => __DIR__ . '/../..' . '/src/Sprint1/Tema_6/Nivel_2/exercici_2.php',
+        'Pelicula' => __DIR__ . '/../..' . '/src/Sprint1/Tema_4/Nivel_3/exercici_1.php',
         'PharIo\\Manifest\\Application' => __DIR__ . '/..' . '/phar-io/manifest/src/values/Application.php',
         'PharIo\\Manifest\\ApplicationName' => __DIR__ . '/..' . '/phar-io/manifest/src/values/ApplicationName.php',
         'PharIo\\Manifest\\Author' => __DIR__ . '/..' . '/phar-io/manifest/src/values/Author.php',
@@ -1000,6 +1013,9 @@ class ComposerStaticInitb4032860af6a4695370fd8567d73bfe7
         'PharIo\\Version\\VersionConstraintParser' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintParser.php',
         'PharIo\\Version\\VersionConstraintValue' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintValue.php',
         'PharIo\\Version\\VersionNumber' => __DIR__ . '/..' . '/phar-io/version/src/VersionNumber.php',
+        'PokerDice' => __DIR__ . '/../..' . '/src/Sprint1/Tema_4/Nivel_2/exercici_1.php',
+        'Rectangle' => __DIR__ . '/../..' . '/src/Sprint1/Tema_5/Nivel_2/exercici_1.php',
+        'Recurso' => __DIR__ . '/../..' . '/src/Sprint1/Tema_6/Nivel_3/exercici_1.php',
         'SebastianBergmann\\CliParser\\AmbiguousOptionException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
         'SebastianBergmann\\CliParser\\Exception' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/Exception.php',
         'SebastianBergmann\\CliParser\\OptionDoesNotAllowArgumentException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php',
@@ -1203,6 +1219,8 @@ class ComposerStaticInitb4032860af6a4695370fd8567d73bfe7
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/type/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/type/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Shape' => __DIR__ . '/../..' . '/src/Sprint1/Tema_5/Nivel_2/exercici_1.php',
+        'Tema' => __DIR__ . '/../..' . '/src/Sprint1/Tema_6/Nivel_3/exercici_1.php',
         'TheSeer\\Tokenizer\\Exception' => __DIR__ . '/..' . '/theseer/tokenizer/src/Exception.php',
         'TheSeer\\Tokenizer\\NamespaceUri' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUri.php',
         'TheSeer\\Tokenizer\\NamespaceUriException' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUriException.php',
@@ -1211,6 +1229,9 @@ class ComposerStaticInitb4032860af6a4695370fd8567d73bfe7
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
+        'Tipo' => __DIR__ . '/../..' . '/src/Sprint1/Tema_6/Nivel_3/exercici_1.php',
+        'Triangle' => __DIR__ . '/../..' . '/src/Sprint1/Tema_5/Nivel_2/exercici_1.php',
+        'Turbo' => __DIR__ . '/../..' . '/src/Sprint1/Tema_6/Nivel_3/exercici_2.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
