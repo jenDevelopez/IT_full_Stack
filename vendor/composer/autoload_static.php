@@ -36,6 +36,7 @@ class ComposerStaticInitb4032860af6a4695370fd8567d73bfe7
     public static $classMap = array (
         'Animal' => __DIR__ . '/../..' . '/src/Sprint1/Tema_5/Nivel_1/exercici_1.php',
         'App\\NumberChecker' => __DIR__ . '/../..' . '/src/Sprint1/Tema_7/NumberChecker.php',
+        'App\\VerificarGradoPorNota' => __DIR__ . '/../..' . '/src/Sprint1/Tema_7/VerificarGradoPorNota.php',
         'Bird' => __DIR__ . '/../..' . '/src/Sprint1/Tema_5/Nivel_1/exercici_1.php',
         'Car' => __DIR__ . '/../..' . '/src/Sprint1/Tema_6/Nivel_3/exercici_2.php',
         'Cat' => __DIR__ . '/../..' . '/src/Sprint1/Tema_5/Nivel_1/exercici_1.php',

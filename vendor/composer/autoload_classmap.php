@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Animal' => $baseDir . '/src/Sprint1/Tema_5/Nivel_1/exercici_1.php',
     'App\\NumberChecker' => $baseDir . '/src/Sprint1/Tema_7/NumberChecker.php',
+    'App\\VerificarGradoPorNota' => $baseDir . '/src/Sprint1/Tema_7/VerificarGradoPorNota.php',
     'Bird' => $baseDir . '/src/Sprint1/Tema_5/Nivel_1/exercici_1.php',
     'Car' => $baseDir . '/src/Sprint1/Tema_6/Nivel_3/exercici_2.php',
     'Cat' => $baseDir . '/src/Sprint1/Tema_5/Nivel_1/exercici_1.php',
